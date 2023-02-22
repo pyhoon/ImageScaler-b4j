@@ -1,0 +1,29 @@
+﻿AppType=StandardJava
+Build1=Default,com.puterise
+Group=Default Group
+Library1=javaobject
+Library2=jcore
+Module1=ImageScaler
+NumberOfFiles=0
+NumberOfLibraries=2
+NumberOfModules=1
+Version=9.8
+@EndOfDesignText@
+'Non-UI application (console / server application)
+#Region Project Attributes 
+	#CommandLineArgs:
+	#MergeLibraries: True
+	#AdditionalJar: imgscalr-lib-4.2
+	#LibraryName: ImageScaler
+	#LibraryVersion: 1
+	#LibraryAuthor: Aeric Poon
+#End Region
+
+Sub Process_Globals
+	Private img As ImageScaler
+End Sub
+
+Sub AppStart (Args() As String)
+	img.Initialize
+	img.ResizeImage(File.DirApp, File.DirApp, "sonic.jpg", 200, 200, "AUTOMATIC")
+End Sub
