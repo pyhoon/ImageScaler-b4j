@@ -1,5 +1,5 @@
 # ImageScaler-b4j
-A B4J wrapper from ImgScalr (https://github.com/rkalla/imgscalr)
+A B4J wrapper for ImgScalr (https://github.com/rkalla/imgscalr)
 
 **Current version:** 1.0
 
